@@ -16,7 +16,7 @@ This is a solution ranked second on the [Private Leaderboard](https://www.kaggle
 
 ## Feature engineering
 
-Some new features were designed in addition to the original ones. The original feature *SPDhits* was not used since it prevents passing the agreement test. Lists the of features used to train each booster are provided below.
+Some new features were designed in addition to the original ones. The original feature *SPDhits* was not used since it prevents passing the agreement test. Lists of the features used to train each booster are provided below.
 
 ### Features for the first booster
 
@@ -39,24 +39,24 @@ Some new features were designed in addition to the original ones. The original f
 
 * **New features:**
   * __*E*__ is the full energy of the mother particle calculated assuming that the final-state particles p0, p1, and p2 are muons (*E* = *E0* + *E1* + *E2*).
-  * __*pz*__
-  * __*beta*__
-  * __*gamma*__
-  * __*beta_gamma*__
-  * __*Delta_E*__
-  * __*Delta_M*__
-  * __*flag_M*__
-  * __*E0*__
-  * __*E1*__
-  * __*E2*__
-  * __*E0_ratio*__
-  * __*E1_ratio*__
-  * __*E2_ratio*__
-  * __*p0_pt_ratio*__
-  * __*p1_pt_ratio*__
-  * __*p2_pt_ratio*__
-  * __*eta_01*__
-  * __*eta_02*__
-  * __*eta_12*__
-  * __*t_coll*__
+  * __*pz*__ is the longitudinal momentum of the mother particle.
+  * __*beta*__ is the relativistic beta of the mother particle (beta = v / c).
+  * __*gamma*__ is the relativistic gamma of the mother particle (gamma = 1 / sqrt(1 – beta^2)).
+  * __*beta_gamma*__ is *beta*×*gamma* calculated as *FlightDistance* / (*LifeTime*×*c*), where *c* is the speed of light.
+  * __*Delta_E*__ is the difference between energies of the mother particle calculated in two different ways.
+  * __*Delta_M*__ is the difference between masses of the mother particle calculated in two different ways.
+  * __*flag_M*__ equals to 1 if the mass of the mother particle is close to the tau mass; equals to 0 otherwise. 
+  * __*E0*__ is the full energy of the particle p0 calculated as *E0* = sqrt[(*m_mu*)^2 + (*p0_p*)^2], where *m_mu* is the muon mass.
+  * __*E1*__ is the full energy of the particle p1 calculated as *E1* = sqrt[(*m_mu*)^2 + (*p1_p*)^2], where *m_mu* is the muon mass.
+  * __*E2*__ is the full energy of the particle p2 calculated as *E2* = sqrt[(*m_mu*)^2 + (*p2_p*)^2], where *m_mu* is the muon mass.
+  * __*E0_ratio*__ is the ratio (*E0* / *E*).
+  * __*E1_ratio*__ is the ratio (*E1* / *E*).
+  * __*E2_ratio*__ is the ratio (*E2* / *E*).
+  * __*p0_pt_ratio*__ is the ratio (*p0_pt* / *pt*).
+  * __*p1_pt_ratio*__ is the ratio (*p1_pt* / *pt*).
+  * __*p2_pt_ratio*__ is the ratio (*p2_pt* / *pt*).
+  * __*eta_01*__ is the difference (*p0_eta* – *p1_eta*).
+  * __*eta_02*__ is the difference (*p0_eta* – *p2_eta*).
+  * __*eta_12*__ is the difference (*p1_eta* – *p2_eta*).
+  * __*t_coll*__ is calculated as (*p0_pt* + *p1_pt* + *p2_pt*) / *pt* (this equals to unity if the final-state particles p0, p1, and p2 are collinear in the transverse plane).
 
