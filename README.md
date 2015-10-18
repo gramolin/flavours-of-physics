@@ -40,8 +40,8 @@ Some new features were designed in addition to the original ones. The original f
 * **New features:**
   * __*E*__ is the full energy of the mother particle calculated assuming that the final-state particles p0, p1, and p2 are muons (*E* = *E0* + *E1* + *E2*).
   * __*pz*__ is the longitudinal momentum of the mother particle.
-  * __*beta*__ is the relativistic beta of the mother particle (beta = v / c).
-  * __*gamma*__ is the relativistic gamma of the mother particle (gamma = 1 / sqrt(1 – beta^2)).
+  * __*beta*__ is the relativistic beta of the mother particle (*beta* = *v* / *c*).
+  * __*gamma*__ is the relativistic gamma of the mother particle (*gamma* = 1 / sqrt(1 – *beta*^2)).
   * __*beta_gamma*__ is *beta*×*gamma* calculated as *FlightDistance* / (*LifeTime*×*c*), where *c* is the speed of light.
   * __*Delta_E*__ is the difference between energies of the mother particle calculated in two different ways.
   * __*Delta_M*__ is the difference between masses of the mother particle calculated in two different ways.
